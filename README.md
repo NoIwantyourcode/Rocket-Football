@@ -1,37 +1,76 @@
-# Rocket football
+# Rocket Football
 
-<img width="545" height="392" alt="image" src="https://github.com/user-attachments/assets/09485f3c-a7a9-4a50-8903-8338de3c725f" />
+![Rocket Football](https://github.com/user-attachments/assets/09485f3c-a7a9-4a50-8903-8338de3c725f)
 
+**Demo Video:** https://www.youtube.com/shorts/yagwG0tLJ1o?is=GJSgdv2bLIIDCHmR
 
-View the demo video at https://www.youtube.com/shorts/yagwG0tLJ1o?is=GJSgdv2bLIIDCHmR.
+---
 
+# What is Rocket Football?
 
-# What is Rocket Football
-Rocket football is a game which based on the popular video game Rocket League, Rocket League is a video game where you drive cars around into balls and the objective is to basically play football with the cars. Rocket football is the in real life version of rocket league where we custom made 2 rovers which use 2 N20 geared motors each to drive around each cart. The motors are controlled with a H bridge motor driver which recieves power from out NRF Super mini which is controlled by the nRF52840. The controllers which are used to drive the cars also use the same nRF52840 devboard and are connected to 4 cherry MX switches, these switches when pressed use the nRF42840's onboard bluetooth functionality to to send commands to the car and drive the ball forward.
+Rocket Football is a real-world version of the popular video game **Rocket League**. In Rocket League, players drive cars into a giant ball and compete to score goals in a soccer-style game.
 
-# How did we built rocket football
- We built Rocket football as a part of a hackathon which I attended. The theme for this hackathon was to make an interactive project for open sauce 2026, While our original idea was too make a claw machine we realised that we didn't have all the necessary equipment in order for us to make one. In the end we settled on this project as we had everything we needed to make it and we believed we could do it
+For Rocket Football, we built two custom RC cars that allow players to recreate that experience in real life. Each car is powered by two N20 geared motors controlled by an H-bridge motor driver. An nRF52840-based SuperMini development board handles the motor control and communicates over Bluetooth.
+
+The handheld controllers also use nRF52840 development boards. Each controller has four Cherry MX switches that send movement commands over Bluetooth to the corresponding car, allowing players to drive around the field and push the ball toward the goal.
+
+---
+
+# How We Built Rocket Football
+
+We built Rocket Football during the Outpost hackathon. The challenge was to create an interactive project for Open Sauce 2026.
+
+Our original idea was to build a claw machine, but we quickly realized we did not have the equipment or time required to complete it. Instead, we chose to build Rocket Football because we already had access to the necessary parts and believed we could finish it before the end of the event.
+
+---
 
 # Day 1
- We started off this project on the first day of the hackathon by CAD modelling the case for the cars and controllers and then figured out what components we would need to make this project work. We ended up with a final components list of the components we needed to make the project as well as a fully CAD modelled car and controller
+
+On the first day, we designed the CAD models for both the cars and the controllers. We also planned the electronics and created a complete bill of materials for the project.
+
+By the end of the day, we had:
+
+* v1 of CAD models for the cars and controllers
+* Finalized BOM
+* Wiring diagram
+
+---
 
 # Day 2
- We used a breadboard to make a working prototype of the car and finalise the firmware we needed for the car and controller to work
- We then tried to transfer everything to protoboard however this took a long time as at first our project wouldn't work and we had to debug the code to get it too work. There was also some extensive problems with the hardware caused by a broken H bridge
 
- I also designed and made the pitch this game would be played on.
+We built a working prototype of the car on a breadboard and finalized the firmware for both the cars and controllers.
+
+After confirming the prototype worked, we transferred the electronics to protoboard. This process took much longer than expected because the project initially stopped working. We spent a significant amount of time debugging both the firmware and the hardware before discovering that one of the H-bridge motor drivers was faulty.
+
+During this time, I also designed and built the playing field for the game.
+
+---
 
 # Day 3
- We finally made the car work near the end of the hackathon and we also made the controller work, we very quickly made a duplicate of the car where both will be used to play the game. We also made and uploaded everything to github and made the BOM for all the components this project uses.
 
-# BOM
-* 4x nRF52840's - used in the cars and controllers
-* 2x H-bridge drivers - used to drive the motors in the car
-* 4x Motors - N20 geared motors which were driven by the H-bridge and were used to make the car drive
-* 8x Cherry MX keys - used in the controller
-* 4x batteries - powers the controllers and cars
-* 2x cardboard boxes - used to make the pitch
-* 4x 3d printed parts - enclosure of the controllers and the cars
-* 1x sheet of foam - used to make the 2nd pitch
+Near the end of the hackathon, we successfully completed the first car and controller. We then quickly assembled a second identical car so that two players could compete against each other.
 
-WE GOT ALL OF THESE PARTS AT THE HARDWARE STATION AT Outpost hackathon or elsewhere around the hackathon venue
+We also:
+
+* Published the project on GitHub
+* Created the bill of materials (BOM)
+* Finished the remaining assembly and testing
+
+---
+
+# Bill of Materials (BOM)
+
+* **4× nRF52840 development boards**
+* **2× H-bridge motor drivers**
+* **4× N20 geared motors**
+* **8× Cherry MX switches**
+* **4× LiPo batteries**
+* **2× Cardboard boxes**
+* **4× 3D-printed parts**
+* **1× Foam board sheet**
+
+---
+
+# Parts
+
+All of the components used in this project were sourced from the hardware station at the Outpost Hackathon or from other supplies available around the hackathon venue.
