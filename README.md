@@ -17,6 +17,8 @@ Rocket football is a game which based on the popular video game Rocket League, R
 
 # Day 3
  We finally made the car work near the end of the hackathon and we also made the controller work, we very quickly made a duplicate of the car where both will be used to play the game. We also made and uploaded everything to github and made the BOM for all the components this project uses.
+ <img width="4032" height="3024" alt="IMG_7935 (1)" src="https://github.com/user-attachments/assets/c8820cb0-80ea-4b69-a377-d31418c04d40" />
+
 
 # BOM
  4x nRF52840's - used in the cars and controllers
